@@ -1,5 +1,5 @@
 import React from "react";
-import { Chat } from "../actions/chat";
+import { Chat } from "@/app/actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -15,10 +15,10 @@ const ChatPage = () => {
     <main className="min-h-screen w-full max-w-screen-md mx-auto border-x relative">
       <form
         action={handleAction}
-        className="absolute bottom-0 h-14 w-full flex items-center justify-center gap-2 border-t px-4"
+        className="absolute bottom-0 h-28 md:h-14 w-full flex flex-col md:flex-row items-center justify-center gap-2 border-t px-4"
       >
         <Input type="text" placeholder="Say Somthing.." />
-        <Button>Send Message</Button>
+        <Button className="w-full md:w-auto">Send Message</Button>
       </form>
     </main>
   );
