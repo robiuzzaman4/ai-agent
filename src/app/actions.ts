@@ -6,7 +6,7 @@ export async function Chat(prompt: string) {
     apiKey: process.env.OPENAI_API_KEY,
   });
   const { text } = await generateText({
-    model: openai("gpt-3.5-turbo"),
+    model: openai("o1-mini"),
     prompt: prompt,
   });
 

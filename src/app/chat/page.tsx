@@ -8,7 +8,7 @@ const ChatPage = () => {
     "use server";
     const res = await Chat("Write a vegetarian lasagna recipe for 4 people.");
 
-    console.log("res: ", res);
+    console.log("⭐⭐⭐⭐⭐ ", res);
   };
 
   return (
