@@ -3,10 +3,10 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <Button>Click me</Button>
-    </div>
+    </main>
   )
 }
 
-export default HomePage
+export default HomePage;
