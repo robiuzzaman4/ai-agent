@@ -1,12 +1,15 @@
-import { Button } from '@/components/ui/button'
-import React from 'react'
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import React from "react";
 
 const HomePage = () => {
   return (
     <main>
-      <Button>Click me</Button>
+      <Button asChild>
+        <Link href="/chat">Go to Chat</Link>
+      </Button>
     </main>
-  )
-}
+  );
+};
 
 export default HomePage;
